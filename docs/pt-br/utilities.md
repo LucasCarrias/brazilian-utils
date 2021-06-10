@@ -84,6 +84,16 @@ import { isValidBoleto } from '@brazilian-utils/brazilian-utils';
 isValidBoleto('00190000090114971860168524522114675860000102656'); // true
 ```
 
+## getBoletoValueInCents
+
+Retorna o valor de um boleto em centavos.
+
+```javascript
+import { getBoletoValueInCents } from '@brazilian-utils/brazilian-utils';
+
+getBoletoValueInCents('00190000090114971860168524522114675860000102656') //102656;
+```
+
 ## isValidEmail
 
 Valida se email é valido.

@@ -84,6 +84,16 @@ import { isValidBoleto } from '@brazilian-utils/brazilian-utils';
 isValidBoleto('00190000090114971860168524522114675860000102656'); // true
 ```
 
+## getBoletoValueInCents
+
+Get boleto ([brazilian payment method](https://en.wikipedia.org/wiki/Boleto)) payment value in cents.
+
+```javascript
+import { getBoletoValueInCents } from '@brazilian-utils/brazilian-utils';
+
+getBoletoValueInCents('00190000090114971860168524522114675860000102656') //102656;
+```
+
 ## isValidEmail
 
 Check if email is valid.
