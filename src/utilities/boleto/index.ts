@@ -134,3 +134,13 @@ export function format(boleto: string) {
       return result;
     }, '');
 }
+
+export function getValueInCents(digitableLine: string): number {
+  if (!digitableLine || !isValid(digitableLine)) return 0;
+
+  const digits = onlyNumbers(digitableLine);
+
+  const valueStartIndex = digits.length - 10;
+
+  return Number(digits.substr(valueStartIndex));
+}

@@ -30,6 +30,7 @@ describe('Public API', () => {
     'capitalize',
     'formatCurrency',
     'parseCurrency',
+    'getBoletoValueInCents'
   ];
 
   Object.keys(API).forEach((method) => {
